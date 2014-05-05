@@ -28,10 +28,24 @@ Example workflow
 An example workflow would be as follows:
 
 Input is VCF:
-`canny.pl --input_filename=test.vcf.gz --ratio_filename=allData.filtered.gc.txt.corr3.allCols.dat.gz --sample_filename=samples.txt --plot_results --bandwidth=0.05 --threshold=0.3 --output_filename=test_arraygenotypes.vcf.gz`
+`canny.pl \
+--input_filename=test.vcf.gz \
+--ratio_filename=allData.filtered.gc.txt.corr3.allCols.dat.gz \ 
+--sample_filename=samples.txt \
+--plot_results \
+--bandwidth=0.05 \
+--threshold=0.3 \
+--output_filename=test_arraygenotypes.vcf.gz`
 
 Input is Region:
-`canny.pl --input_region=7:143911018-144034817 --ratio_filename=allData.filtered.gc.txt.corr3.allCols.dat.gz --sample_filename=samples.txt --plot_results --bandwidth=0.05 --threshold=0.3 --output_filename=test_arraygenotypes.vcf.gz`
+`canny.pl \
+--input_region=7:143911018-144034817 \
+--ratio_filename=allData.filtered.gc.txt.corr3.allCols.dat.gz \
+--sample_filename=samples.txt \
+--plot_results \
+--bandwidth=0.05 \
+--threshold=0.3 \
+--output_filename=test_arraygenotypes.vcf.gz`
 
 Contact
 -------
