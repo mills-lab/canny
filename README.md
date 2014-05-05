@@ -37,7 +37,7 @@ canny.pl \
 --plot_results \
 --bandwidth=0.05 \
 --threshold=0.3 \
---output_filename=test_arraygenotypes.vcf.gz
+--output_filename=test.aCGH.genotypes.vcf.gz
 ~~~
 
 Input is Region:
@@ -50,7 +50,7 @@ canny.pl \
 --plot_results \
 --bandwidth=0.05 \
 --threshold=0.3 \
---output_filename=test_arraygenotypes.vcf.gz
+--output_filename=test.aCGH.genotypes.vcf.gz
 ~~~
 
 Contact
