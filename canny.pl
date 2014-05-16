@@ -42,6 +42,7 @@ $opts{sample_filename} = "/scratch/remills_flux/remills/1kg_aCGH/samples.txt";
 $opts{cluster_label}   = "cluster";
 $opts{samtools}        = "samtools";
 $opts{output_format}   = "CN";
+$opts{version} = $version;
 
 my $optResult = GetOptions(
     "input_filename=s"        => \$opts{input_filename},
@@ -180,7 +181,7 @@ sub clusterRegion {
         $probeNum++;
     }
 
-    if ( $probeNum < $opts{min_num_probes} ) { next; }
+    if ( $probeNum < $opts{min_num_probes} ) { return; }
     my @medians   = ();
     my $sampleNum = 0;
     while ( defined( $ratios[0][$sampleNum] ) ) {
