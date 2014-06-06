@@ -546,10 +546,10 @@ sub format_line_hash {
 sub usage {
     my $version = shift;
     printf("\n");
-    printf( "%-9s %s\n", "Program:", "clusterProbes.pl" );
+    printf( "%-9s %s\n", "Program:", "canny.pl" );
     printf( "%-9s %s\n", "Version:", "$version" );
     printf("\n");
-    printf( "%-9s %s\n", "Usage:", "clusterProbes.pl [options]" );
+    printf( "%-9s %s\n", "Usage:", "canny.pl [options]" );
     printf("\n");
     printf( "%-9s %-35s %s\n", "Options:", "--input_filename=[filename]",         "Input alignment file in VCF format (required if input_range not set)" );
     printf( "%-9s %-35s %s\n", "",         "--input_range=[chr:start-end]",       "Input query range (optional)" );
